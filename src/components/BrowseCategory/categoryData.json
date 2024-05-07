@@ -1,0 +1,121 @@
+[
+ {
+    "id": 1,
+    "image": "puzzel.png",
+    "name": "PUZZLE",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(139,0,0)"
+  },
+{
+    "id": 2,
+    "image": "vr.png",
+    "name": "VIRTUAL REALITY TITLES",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(139,0,0)"
+  },
+ {
+    "id": 3,
+    "image": "rogue_like_rogue_lite.png",
+    "name": "Rogue-like",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,0,139)"
+  },
+ {
+    "id": 4,
+    "image": "fighting.png",
+    "name": "Fighting",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(184,134,11)"
+  },
+{
+    "id": 5,
+    "image": "casual.png",
+    "name": "Casual",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,100,0)"
+  },
+ {
+     "id": 6,
+    "image": "multiplayer_coop.png",
+    "name": "Co-operative",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,139,139)"
+  },
+{
+     "id": 7,
+    "image": "racing.png",
+    "name": "Racing",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(139,0,139)"
+  },
+{
+     "id": 8,
+    "image": "action.png",
+    "name": "action",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(233,140,0)"
+  },
+{
+     "id": 9,
+    "image": "horror.png",
+    "name": "horror",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(139,0,0)"
+  },
+ {
+     "id": 10,
+    "image": "anime.png",
+    "name": "anime",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,0,139)"
+  },
+ {
+    "id": 11,
+    "image": "story-rich.png",
+    "name": "story-rich",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(184,134,11)"
+  },
+ {
+    "id": 12,
+    "image": "freetoplay.png",
+    "name": "free to play",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,100,0)"
+  },
+ {
+    "id": 13,
+    "image": "adventure.png",
+    "name": "adventure",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,0,139)"
+  },
+ {
+    "id": 14,
+    "image": "strategy_cities_settlements.png",
+    "name": "strategy",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,0,139)"
+  },
+ {
+    "id": 15,
+    "image": "survival.png",
+    "name": "survival",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,0,139)"
+  },
+  {
+    "id": 16,
+    "image": "simulation.png",
+    "name": "simulation",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,0,139)"
+  },
+ {
+    "id": 17,
+    "image": "visual_novel.png",
+    "name": "visual novel",
+    "gradient-start": "rgba(0,0,0,0)",
+    "gredient-end": "rgb(0,0,139)"
+  }
+]
