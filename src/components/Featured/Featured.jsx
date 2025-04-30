@@ -1,26 +1,30 @@
-import { DataContext } from "../../context/DataContext"
-import { useContext } from "react"
-import FeaturedCard from './FeaturedCard'
+import { DataContext } from "../../context/DataContext";
+import { useContext } from "react";
+import FeaturedCard from "./FeaturedCard";
 import { Carousel, IconButton } from "@material-tailwind/react";
-import SectionHeading from '../Shared/SectionHeading'
+import SectionHeading from "../Shared/SectionHeading";
 
 export default function Featured() {
   const { steamData, loading } = useContext(DataContext);
-  const randomGameArray = []
+  const randomGameArray = [];
 
   // Get random games from steamData to display as Featured Games
   if (!loading) {
     for (let i = 0; i < 10; i++) {
       const randomIndex = Math.floor(Math.random() * steamData.length);
       const randomGame = steamData[randomIndex];
-      randomGameArray.push(randomGame)
+      randomGameArray.push(randomGame);
     }
   }
 
   return (
     <div className="w-full pt-6 px-2 lg:px-0 h-full relative overflow-visible">
-
-      <img src="cluster_bg.png" alt="background" className="w-full lg:w-screen absolute bottom-0 left-0" />
+      {/* Image only appears on the first card, none of the following ones. Not sure why.. */}
+      {/* <img
+        src="cluster_bg.png"
+        alt="background"
+        className="w-full lg:w-screen absolute bottom-0 left-0"
+      /> */}
 
       <SectionHeading>Featured & Recommended</SectionHeading>
       <Carousel
@@ -53,7 +57,8 @@ export default function Featured() {
             <div className="">
               <i className="fas fa-angle-right text-6xl"></i>
             </div>
-          </IconButton>)}
+          </IconButton>
+        )}
         navigation={({ setActiveIndex, activeIndex, length }) => (
           // Scroll bar thing under the items
           <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -61,19 +66,33 @@ export default function Featured() {
               <span
                 key={i}
                 className={`block h-1 lg:h-2 cursor-pointer rounded-2xl lg:rounded-sm transition-all content-[''] 
-                ${activeIndex === i ? "w-14 lg:w-4 bg-white/50" : "w-4 bg-transparent lg:bg-white/20"
-                  }`}
+                ${
+                  activeIndex === i
+                    ? "w-14 lg:w-4 bg-white/50"
+                    : "w-4 bg-transparent lg:bg-white/20"
+                }`}
                 onClick={() => setActiveIndex(i)}
               />
             ))}
           </div>
         )}
       >
-        {!loading ? (randomGameArray.map((item) => (
-          <FeaturedCard key={item?.sid} title={item?.name} promo={item?.store_promo_url} fullPrice={item?.full_price} discount={item?.discount} currentPrice={item?.current_price} image={item?.image} />
-        ))) : <p className="text-white">Loading</p>}
+        {!loading ? (
+          randomGameArray.map((item) => (
+            <FeaturedCard
+              key={item?.sid}
+              title={item?.name}
+              promo={item?.store_promo_url}
+              fullPrice={item?.full_price}
+              discount={item?.discount}
+              currentPrice={item?.current_price}
+              image={item?.image}
+            />
+          ))
+        ) : (
+          <p className="text-white">Loading</p>
+        )}
       </Carousel>
     </div>
-
-  )
+  );
 }
