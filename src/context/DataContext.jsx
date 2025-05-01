@@ -7,6 +7,7 @@ export const useData = () => useContext(DataContext);
 export const DataProvider = ({ children }) => {
   const [steamData, setSteamData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -25,7 +26,7 @@ export const DataProvider = ({ children }) => {
 
   return (
     <DataContext.Provider
-      value={{ steamData, setSteamData, loading, setLoading }}
+      value={{ steamData, setSteamData, loading, setLoading, open, setOpen }}
     >
       {children}
     </DataContext.Provider>

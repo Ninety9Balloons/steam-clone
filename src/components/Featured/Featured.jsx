@@ -80,7 +80,7 @@ export default function Featured() {
         {!loading ? (
           randomGameArray.map((item) => (
             <FeaturedCard
-              key={item?.sid}
+              id={item?.sid}
               title={item?.name}
               promo={item?.store_promo_url}
               fullPrice={item?.full_price}

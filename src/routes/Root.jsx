@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Header from '../components/Header/Header'
-import MenuSearch from '../components/MenuSearch/MenuSearch'
-
+import Header from "../components/Header/Header";
+import MenuSearch from "../components/MenuSearch/MenuSearch";
 
 export default function Root() {
   return (

@@ -7,6 +7,7 @@ export default function FeaturedCard({
   discount,
   currentPrice,
   promo,
+  id,
 }) {
   // Take the price and add a decimal to it
   function insertDecimal(num) {
@@ -15,7 +16,10 @@ export default function FeaturedCard({
   const formattedPrice = insertDecimal(currentPrice).toFixed(2);
 
   return (
-    <div className="w-full flex flex-col lg:flex-row lg:h-[350px] items-start rounded shadow-[0_0_7px_0_#000000] lg:overflow-hidden">
+    <div
+      key={id}
+      className="w-full flex flex-col lg:flex-row lg:h-[350px] items-start rounded shadow-[0_0_7px_0_#000000] lg:overflow-hidden"
+    >
       {/* Image */}
       <img
         src={image}
